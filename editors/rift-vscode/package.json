@@ -152,7 +152,7 @@
     "lint": "eslint --ext ts src",
     "format": "prettier --write --plugin prettier-plugin-svelte .",
     "test": "node ./out/test/runTest.js",
-    "clean": "rm -rf out/compiled & rm -rf dist/*"
+    "clean": "rimraf out/compiled && rimraf dist/*"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
